@@ -93,12 +93,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.step {float:left; width:100%; position:relative;} 
+.step p {margin:0;}
+.content {width:80%; height:100%; margin:0 auto;}
+#home {height:2000px;}
+#home, #contact {background:#fe0036;}
+#profile {background:#FFF;}
+#portifolio {background:#000;}
 
-
-
-
-
-
+#home h1 {background:url('../img/logo.png') no-repeat; width:250px; height:160px; position:absolute; left:50%; top:50%; margin:-80px 0 0 -125px;}
+#profile .column-left, #profile .column-right {width:50%; height:100%; position:relative; float:left;}
+#profile .column-left span {background:url('../img/hi.png') no-repeat; width:241px; height:455px; display:block; position:absolute; top:50%; margin-top:-227px;}
+#profile .column-right .grid-profile {width:495px; height:95px; position:absolute; right:0; top:50%; margin-top:-47px;}
+#profile .column-right .twitter-profile {width:168px; height:29px; display:block; background:url('../img/profile-twitter.png') no-repeat; margin-top:13px;}
+#profile .column-right .fb-profile {width:232px; height:28px; display:block; background:url('../img/fb-profile.png') no-repeat;}
+#profile .column-right img {float:left; margin-right:20px;}
 
 
 
