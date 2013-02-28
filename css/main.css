@@ -102,12 +102,28 @@ textarea {
 #portifolio {background:#000;}
 
 #home h1 {background:url('../img/logo.png') no-repeat; width:250px; height:160px; position:absolute; left:50%; top:50%; margin:-80px 0 0 -125px;}
+
 #profile .column-left, #profile .column-right {width:50%; height:100%; position:relative; float:left;}
 #profile .column-left span {background:url('../img/hi.png') no-repeat; width:241px; height:455px; display:block; position:absolute; top:50%; margin-top:-227px;}
 #profile .column-right .grid-profile {width:495px; height:95px; position:absolute; right:0; top:50%; margin-top:-47px;}
 #profile .column-right .twitter-profile {width:168px; height:29px; display:block; background:url('../img/profile-twitter.png') no-repeat; margin-top:13px;}
 #profile .column-right .fb-profile {width:232px; height:28px; display:block; background:url('../img/fb-profile.png') no-repeat;}
 #profile .column-right img {float:left; margin-right:20px;}
+
+#protifolio {position:relative;}
+#portifolio .jobs {padding:0; width:610px; height:600px; position:absolute; top:50%; left:50%; margin-left:-305px; margin-top:-300px;}
+#portifolio .jobs li {display:inline-block; margin-right:20px; margin-bottom:20px;}
+#portifolio .jobs li:nth-child(5n) {margin-right:0;}
+
+#contact {position:relative;}
+#contact .contacts {padding:0; position:absolute; top:50%; left:50%; margin-top:-30px; margin-left:-385px; width:775px;}
+#contact .contacts .contact {display:inline-block; margin-right:90px;}
+#contact .contacts .contact span {display:block; width:60px; height:60px;}
+#contact .contacts .contact .fb {background:url('../img/fb.png') no-repeat;}
+#contact .contacts .contact .twitter {background:url('../img/twitter.png') no-repeat;}
+#contact .contacts .contact .phone {background:url('../img/phone.png') no-repeat;}
+#contact .contacts .contact .location {background:url('../img/location.png') no-repeat;}
+#contact .contacts .contact .mail {background:url('../img/email.png') no-repeat;}
 
 
 
