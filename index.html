@@ -13,14 +13,19 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+    <body id="content">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
         <article id="home" class="step">
             <div class="content">
                 <h1 class="ir">v94</h1>
+                <div class="arrow">
+                    <a href="javascript:;" class="arrow-up"><!-- --></a>
+                    <a href="#profile" class="arrow-down"><!-- --></a>
+                </div>
             </div>
+            
         </article>
         <article id="profile" class="step">
             <div class="content">
@@ -30,39 +35,67 @@
                 <section class="column-right">
                     <div class="grid-profile">
                         <img class="picture" src="img/img-profile.png"/>
-                        <a href="http://twitter.com/vitoralmeiida" class="twitter-profile ir">@vitoralmeiida</a>
-                        <a href="http://fb.com/vitoralmeida" class="fb-profile ir">fb.com/vitoralmeida</a>
+                        <span class="tp-profile"><!-- --></span>
+                        <a href="http://twitter.com/vitoralmeiida" class="twitter-profile ir" target="_blank">@vitoralmeiida</a>
+                        <a href="http://fb.com/vitoralmeiida" class="fb-profile ir" target="_blank">fb.com/vitoralmeida</a>
                     </div>
                 </section>
+                <div class="arrow">
+                    <a href="#home" class="arrow-up"><!-- --></a>
+                    <a href="#portifolio" class="arrow-down"><!-- --></a>
+                </div>
             </div>
         </article>
         <article id="portifolio" class="step">
             <div class="content">
                 <ul class="jobs">
-                    <li><img src="img/thumbs/1.png" data-id="1"/></li>
-                    <li><img src="img/thumbs/2.png" data-id="2"/></li>
-                    <li><img src="img/thumbs/3.png" data-id="3"/></li>
-                    <li><img src="img/thumbs/4.png" data-id="4"/></li>
-                    <li><img src="img/thumbs/5.png" data-id="5"/></li>
-                    <li><img src="img/thumbs/6.png" data-id="6"/></li>
-                    <li><img src="img/thumbs/7.png" data-id="7"/></li>
-                    <li><img src="img/thumbs/8.png" data-id="8"/></li>
+                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/1.png" data-id="1"/></a></li>
+                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/2.png" data-id="2"/></a></li>
+                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/3.png" data-id="3"/></a></li>
+                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/4.png" data-id="4"/></a></li>
+                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/5.png" data-id="5"/></a></li>
+                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/6.png" data-id="6"/></a></li>
+                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/7.png" data-id="7"/></a></li>
+                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/8.png" data-id="8"/></a></li>
                 </ul>
+                <div class="arrow">
+                    <a href="#profile" class="arrow-up"><!-- --></a>
+                    <a href="#contact" class="arrow-down"><!-- --></a>
+                </div>
             </div>
         </article>
         <article id="contact" class="step">
             <div class="content">
                 <ul class="contacts">
-                    <li class="contact"><span class="fb"><!-- --></span></li>
-                    <li class="contact"><span class="twitter"><!-- --></span></li>
-                    <li class="contact"><span class="phone"><!-- --></span></li>
-                    <li class="contact"><span class="mail"><!-- --></span></li>
-                    <li class="contact"><span class="location"><!-- --></span></li>
+                    <li class="contact">
+                        <a href="http://fb.com/v94design" class="fb" target="_blank"><!-- --></a>
+                        <span class="tp-fb tp"><!-- --></span>
+                    </li>
+                    <li class="contact">
+                        <a href="http://twitter.com/v94design" class="twitter" target="_blank"><!-- --></a>
+                        <span class="tp-twitter tp"><!-- --></span>
+                    </li>
+                    <li class="contact">
+                        <a href="javascript:;" class="phone"><!-- --></a>
+                        <span class="tp-phone tp"><!-- --></span>
+                    </li>
+                    <li class="contact">
+                        <a href="mailto:hello@v94.com.br" class="mail"><!-- --></a>
+                        <span class="tp-mail tp"><!-- --></span>
+                    </li>
+                    <li class="contact">
+                        <a href="javascript:;" class="location"><!-- --></a>
+                        <span class="tp-location tp"><!-- --></span>
+                    </li>
                 </ul>
+                <div class="arrow">
+                    <a href="#portifolio" class="arrow-up"><!-- --></a>
+                    <a href="javascript:;" class="arrow-down"><!-- --></a>
+                </div>
             </div>
         </article>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/vendor/jquery-1.9.1.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
@@ -74,5 +107,6 @@
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+        
     </body>
 </html>
