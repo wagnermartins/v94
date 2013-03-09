@@ -9,6 +9,7 @@
         <title>V94</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+         <link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.css?v=2.1.4">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -42,21 +43,31 @@
                 </section>
                 <div class="arrow">
                     <a href="#home" class="arrow-up"><!-- --></a>
-                    <a href="#portifolio" class="arrow-down"><!-- --></a>
+                    <a href="#portfolio" class="arrow-down"><!-- --></a>
                 </div>
             </div>
         </article>
-        <article id="portifolio" class="step">
+        <article id="portfolio" class="step">
             <div class="content">
                 <ul class="jobs">
-                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/1.png" data-id="1"/></a></li>
-                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/2.png" data-id="2"/></a></li>
-                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/3.png" data-id="3"/></a></li>
-                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/4.png" data-id="4"/></a></li>
-                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/5.png" data-id="5"/></a></li>
-                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/6.png" data-id="6"/></a></li>
-                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/7.png" data-id="7"/></a></li>
-                    <li><a href="javascript:;" class="bw-wrapper"><img src="img/thumbs/8.png" data-id="8"/></a></li>
+                    <li><a rel="group" href="img/upload/RS.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/1.png" /></a></li>
+                    <li><a rel="group" href="img/upload/partners.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/2.png" /></a></li>
+                    <li><a rel="group" href="img/upload/vitalle.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/3.png" /></a></li>
+                    <li><a rel="group" href="img/upload/global.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/4.png" /></a></li>
+                    <li><a rel="group" href="img/upload/techcenter.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/5.png" /></a></li>
+                    <li><a rel="group" href="img/upload/stampa.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/6.png" /></a></li>
+                    <li><a rel="group" href="img/upload/5marias1.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/11.png" /></a></li>
+                    <li><a rel="group" href="img/upload/5marias1.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/12.png" /></a></li>
+                    <li><a rel="group" href="img/upload/contatti1.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/13.png" /></a></li>
+                    <li><a rel="group" href="img/upload/stampa.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/6.png" /></a></li>
+                    <li><a rel="group" href="img/upload/5marias1.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/11.png" /></a></li>
+                    <li><a rel="group" href="img/upload/5marias1.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/12.png" /></a></li>
+                    <li><a rel="group" href="img/upload/contatti1.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/13.png" /></a></li>
+                    <li><a rel="group" href="img/upload/stampa.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/6.png" /></a></li>
+                    <li><a rel="group" href="img/upload/5marias1.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/11.png" /></a></li>
+                    <li><a rel="group" href="img/upload/5marias1.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/12.png" /></a></li>
+                    <li><a rel="group" href="img/upload/contatti1.jpg" class="bw-wrapper fancybox"><img src="img/upload/thumbs/13.png" /></a></li>
+                    <li><a rel="group" href="http://www.youtube.com/watch?v=ZNtzIefgA6E" class="bw-wrapper fancybox-media"><img src="img/upload/thumbs/21.png" /></a></li>
                 </ul>
                 <div class="arrow">
                     <a href="#profile" class="arrow-up"><!-- --></a>
@@ -89,7 +100,7 @@
                     </li>
                 </ul>
                 <div class="arrow">
-                    <a href="#portifolio" class="arrow-up"><!-- --></a>
+                    <a href="#portfolio" class="arrow-up"><!-- --></a>
                     <a href="javascript:;" class="arrow-down"><!-- --></a>
                 </div>
             </div>
@@ -97,8 +108,21 @@
 
         <script src="js/vendor/jquery-1.9.1.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.4"></script>
+        <script src="js/vendor/fancybox/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script type="text/javascript">
+            $(".fancybox").fancybox();
+
+            $('.fancybox-media').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+                helpers : {
+                    media : {}
+                }
+            });
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
